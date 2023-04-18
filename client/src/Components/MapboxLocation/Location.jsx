@@ -30,7 +30,7 @@ function Location() {
 
   // Create object using useLoadScript (returns loadState and loadError)
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyBJos7lvFoInrNg9PZNTSeT2q_lROWOSek",
+    googleMapsApiKey: AIzaSyBJos7lvFoInrNg9PZNTSeT2q_lROWOSek,
   });
 
   if (loadError) return "Error Loading Google Maps.";
