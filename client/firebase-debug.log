@@ -1,0 +1,39 @@
+[debug] [2023-04-18T00:31:47.676Z] ----------------------------------------------------------------------
+[debug] [2023-04-18T00:31:47.682Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2023-04-18T00:31:47.684Z] CLI Version:   11.27.0
+[debug] [2023-04-18T00:31:47.684Z] Platform:      darwin
+[debug] [2023-04-18T00:31:47.685Z] Node Version:  v16.14.0
+[debug] [2023-04-18T00:31:47.686Z] Time:          Mon Apr 17 2023 20:31:47 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-04-18T00:31:47.687Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-18T00:31:47.705Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-18T00:31:47.706Z] > authorizing via signed-in user (dariusgracey500@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/dariusgracey/Desktop/Final_Herbal_Stoners/client
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-04-18T00:32:13.495Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-04-18T00:32:14.203Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-04-18T00:32:14.204Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project herbalstonersapp (HerbalStonersApp) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
