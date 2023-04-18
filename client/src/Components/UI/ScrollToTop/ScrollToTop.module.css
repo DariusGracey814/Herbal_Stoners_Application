@@ -1,0 +1,37 @@
+.up-btn {
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    padding: 0.4rem 0.6rem;
+    background: #fff;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0 4px var(--clr--blue);
+    -webkit-box-shadow: 0 0 0 4px var(--clr--blue);
+    -moz-box-shadow: 0 0 0 4px var(--clr--blue);
+    opacity: 1;
+    transition: all 0.3s ease;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.up-btn:hover {
+    background: #fff;
+}
+
+.up-btn:focus {
+    background: #fff;
+    transform: scale(0.96);
+    box-shadow: 0 0 0 4px var(--clr--blue);
+}
+
+.up-icon {
+    font-size: 1.7rem;
+    color: var(--clr--blue);
+}
+
+

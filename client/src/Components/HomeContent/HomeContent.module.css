@@ -1,0 +1,134 @@
+.intro-section {
+    position: relative;
+    padding: 3rem 2rem 5rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.intro h1, 
+.intro-text,
+.intro-discount {
+    color: var(--clr--blue);
+}
+
+.intro-h1 {
+    font-size: 2.5rem;
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+    color: var(--clr--blue);
+    letter-spacing: -1px;
+    line-height: 1.2;
+    font-weight: 700;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: all 1.2s ease;
+}
+
+.intro-h1.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.intro-text--wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    transform: translateX(170px);
+    opacity: 0;
+    transition: all 1.1s ease;
+}
+
+.intro-text--wrapper.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.intro-text {
+    opacity: 0.7;
+    max-width: 800px;
+    font-weight: 600;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.intro-discount {
+    opacity: 0.8;
+    margin: 1rem 0 2rem;
+    font-size: 0.8rem;
+}
+
+.intro-btn {
+    border: none;
+    padding: 1.2rem 2.1rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.intro-btn a {
+    text-decoration: none;
+    color: var(--clr-light);
+}
+
+
+@media (max-width: 800px) {
+    .intro-h1 {
+        max-width: 700px;
+        font-size: 2rem;
+    }
+
+    .intro-text {
+        max-width: 650px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .intro-h1,
+    .intro-text,
+    .intro-discount {
+        max-width: 100%;
+    }
+
+    .intro-h1 {
+        font-size: 1.7rem;
+    }
+
+    .intro-text {
+        font-size: 0.8rem;
+    }
+
+    .intro-discount {
+        font-size: 0.7rem;
+    }
+    
+    .intro-btn {
+        padding: 1rem 1.3rem;
+        font-size: 0.9rem;
+
+    }
+}
+
+@media (max-width: 460px) {
+    .intro-section {
+        padding: 3rem 1.2rem;
+    }
+
+    .intro-h1 {
+        font-size: 1.4rem;
+    }
+
+    .intro-text {
+        font-size: 0.75rem;
+    }
+
+    .intro-discount {
+        font-size: 0.65rem;
+    }
+    
+    .intro-btn {
+        padding: 0.8rem 1rem;
+        font-size: 0.8rem;
+
+    }
+}

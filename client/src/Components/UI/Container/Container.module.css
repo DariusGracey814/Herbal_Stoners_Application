@@ -1,0 +1,14 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.containerXL {
+    max-width: 1400px;
+    margin: 0 auto;
+}

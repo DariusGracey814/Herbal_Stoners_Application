@@ -1,0 +1,535 @@
+[
+  {
+    "name": "Dirty Cookies",
+    "products": [
+      {
+        "strain": "Dirty Cookies",
+        "weight": "1g",
+        "price": "price_1MwDykG6XH5BieNnllQs9H20",
+        "quantity": "0"
+      },
+      {
+        "strain": "Dirty Cookies",
+        "weight": "2g",
+        "price": "price_1MwDzxG6XH5BieNnXUAB1abW",
+        "quantity": "0"
+      },
+      {
+        "strain": "Dirty Cookies",
+        "weight": "3.5g",
+        "price": "price_1MwE1nG6XH5BieNn6idN4CYs",
+        "quantity": "0"
+      },
+      {
+        "strain": "Dirty Cookies",
+        "weight": "7g",
+        "price": "price_1MwE5iG6XH5BieNn2ZSKqqOR",
+        "quantity": "0"
+      },
+      {
+        "strain": "Dirty Cookies",
+        "weight": "14g",
+        "price": "price_1MwE6OG6XH5BieNnTfQ7WXQC",
+        "quantity": "0"
+      },
+      {
+        "strain": "Dirty Cookies",
+        "weight": "28g",
+        "price": "price_1MwEFsG6XH5BieNnm0UshY3R",
+        "quantity": "0"
+      }
+    ]
+  },
+  {
+    "name": "Doctor Cookies",
+    "products": [
+      {
+        "strain": "Doctor Cookies",
+        "weight": "1g",
+        "price": "price_1MwEGrG6XH5BieNnfAYwEOnz",
+        "quantity": "0"
+      },
+      {
+        "strain": "Doctor Cookies",
+        "weight": "2g",
+        "price": "price_1MwEI0G6XH5BieNnxLpYtpzr",
+        "quantity": "0"
+      },
+      {
+        "strain": "Doctor Cookies",
+        "weight": "3.5g",
+        "price": "price_1MwEJSG6XH5BieNnUFJBggtV",
+        "quantity": "0"
+      },
+      {
+        "strain": "Doctor Cookies",
+        "weight": "7g",
+        "price": "price_1MwEJwG6XH5BieNnnDL7NqMI",
+        "quantity": "0"
+      },
+      {
+        "strain": "Doctor Cookies",
+        "weight": "14g",
+        "price": "price_1MwEKrG6XH5BieNnzeaIvVaT",
+        "quantity": "0"
+      },
+      {
+        "strain": "Doctor Cookies",
+        "weight": "28g",
+        "price": "price_1MwELaG6XH5BieNnC79BKDX7",
+        "quantity": "0"
+      }
+    ]
+  },
+  {
+    "name": "Electric Mayhem",
+    "products": [
+      {
+        "strain": "Electric Mayhem",
+        "weight": "1g",
+        "price": "price_1MwEMQG6XH5BieNnUIVfnNn4",
+        "quantity": "0"
+      },
+      {
+        "strain": "Electric Mayhem",
+        "weight": "2g",
+        "price": "price_1MwEMqG6XH5BieNnHb7tNkCf",
+        "quantity": "0"
+      },
+      {
+        "strain": "Electric Mayhem",
+        "weight": "3.5g",
+        "price": "price_1MwENIG6XH5BieNnWD6B5HrQ",
+        "quantity": "0"
+      },
+      {
+        "strain": "Electric Mayhem",
+        "weight": "7g",
+        "price": "price_1MwENlG6XH5BieNn759iJr96",
+        "quantity": "0"
+      },
+      {
+        "strain": "Electric Mayhem",
+        "weight": "14g",
+        "price": "price_1MwEOiG6XH5BieNnBQ7xtHGJ",
+        "quantity": "0"
+      },
+      {
+        "strain": "Electric Mayhem",
+        "weight": "28g",
+        "price": "price_1MwEPMG6XH5BieNnvgaxLtxa",
+        "quantity": "0"
+      }
+    ]
+  },
+  {
+    "name": "My Friend Jack",
+    "products": [
+      {
+        "strain": "My Friend Jack",
+        "weight": "1g",
+        "price": "price_1MwEX6G6XH5BieNnqppJVMqM",
+        "quantity": "0"
+      },
+      {
+        "strain": "My Friend Jack",
+        "weight": "2g",
+        "price": "price_1MwEXsG6XH5BieNnZ1G5pKcL",
+        "quantity": "0"
+      },
+      {
+        "strain": "My Friend Jack",
+        "weight": "3.5g",
+        "price": "price_1MwEYMG6XH5BieNnTvEZSbWS",
+        "quantity": "0"
+      },
+      {
+        "strain": "My Friend Jack",
+        "weight": "7g",
+        "price": "price_1MwEZjG6XH5BieNnAf9kC3ca",
+        "quantity": "0"
+      },
+      {
+        "strain": "My Friend Jack",
+        "weight": "14g",
+        "price": "price_1MwEaMG6XH5BieNni6VyKu26",
+        "quantity": "0"
+      },
+      {
+        "strain": "My Friend Jack",
+        "weight": "28g",
+        "price": "price_1MwEbjG6XH5BieNn1haVCGpo",
+        "quantity": "0"
+      }
+    ]
+  },
+  {
+    "name": "Sour Cat",
+    "products": [
+      {
+        "strain": "Sour Cat",
+        "weight": "1g",
+        "price": "price_1MwYJQG6XH5BieNnlXEDQe0H",
+        "quantity": "0"
+      },
+      {
+        "strain": "Sour Cat",
+        "weight": "2g",
+        "price": "price_1MwYJxG6XH5BieNnFFQiVR7M",
+        "quantity": "0"
+      },
+      {
+        "strain": "Sour Cat",
+        "weight": "3.5g",
+        "price": "price_1MwYL8G6XH5BieNnlhyf5zbN",
+        "quantity": "0"
+      },
+      {
+        "strain": "Sour Cat",
+        "weight": "7g",
+        "price": "price_1MwYM0G6XH5BieNn42TeX16Z",
+        "quantity": "0"
+      },
+      {
+        "strain": "Red Lemon",
+        "weight": "14g",
+        "price": "price_1MwYMXG6XH5BieNnPt0v5piq",
+        "quantity": "0"
+      },
+      {
+        "strain": "Sour Cat",
+        "weight": "28g",
+        "price": "price_1MwYO2G6XH5BieNn3p8GMHnW",
+        "quantity": "0"
+      }
+    ]
+  },
+  {
+    "name": "Red Lemon",
+    "products": [
+      {
+        "strain": "Red Lemon",
+        "weight": "1g",
+        "price": "price_1MwEciG6XH5BieNnKJV8cyoJ",
+        "quantity": "0"
+      },
+      {
+        "strain": "Red Lemon",
+        "weight": "2g",
+        "price": "price_1MwEfiG6XH5BieNnDmB5N9D5",
+        "quantity": "0"
+      },
+      {
+        "strain": "Red Lemon",
+        "weight": "3.5g",
+        "price": "price_1MwYEYG6XH5BieNnbnEoq71h",
+        "quantity": "0"
+      },
+      {
+        "strain": "Red Lemon",
+        "weight": "7g",
+        "price": "price_1MwYF5G6XH5BieNnPkFYB8ho",
+        "quantity": "0"
+      },
+      {
+        "strain": "Red Lemon",
+        "weight": "14g",
+        "price": "price_1MwYFwG6XH5BieNnLLUF3Rtv",
+        "quantity": "0"
+      },
+      {
+        "strain": "Red Lemon",
+        "weight": "28g",
+        "price": "price_1MwYGxG6XH5BieNnwnnPOZU3",
+        "quantity": "0"
+      }
+    ]
+  },
+  {
+    "name": "Acid Dough",
+    "products": [
+      {
+        "strain": "Acid Dough",
+        "weight": "1g",
+        "price": "price_1MwYRLG6XH5BieNnZ9W6dIe8",
+        "quantity": "0"
+      },
+      {
+        "strain": "Acid Dough",
+        "weight": "2g",
+        "price": "price_1MwYTEG6XH5BieNnh4FQBmrM",
+        "quantity": "0"
+      },
+      {
+        "strain": "Acid Dough",
+        "weight": "3.5g",
+        "price": "price_1MwYTgG6XH5BieNntiHDXSyL",
+        "quantity": "0"
+      },
+      {
+        "strain": "Acid Dough",
+        "weight": "7g",
+        "price": "price_1MwYUCG6XH5BieNnYYNIk4TF",
+        "quantity": "0"
+      },
+      {
+        "strain": "Acid Dough",
+        "weight": "14g",
+        "price": "price_1MwYUpG6XH5BieNnxNgP1Wae",
+        "quantity": "0"
+      },
+      {
+        "strain": "Acid Dough",
+        "weight": "28g",
+        "price": "price_1MwYVJG6XH5BieNnZD4lrNxs",
+        "quantity": "0"
+      }
+    ]
+  },
+  {
+    "name": "Og Badazz",
+    "products": [
+      {
+        "strain": "Og Badazz",
+        "weight": "1g",
+        "price": "price_1MwYYpG6XH5BieNnEkwWLuDY",
+        "quantity": "0"
+      },
+      {
+        "strain": "Og Badazz",
+        "weight": "2g",
+        "price": "price_1MwYZWG6XH5BieNnYireUuYC",
+        "quantity": "0"
+      },
+      {
+        "strain": "Og Badazz",
+        "weight": "3.5g",
+        "price": "price_1MwYaBG6XH5BieNnSUh9yG9j",
+        "quantity": "0"
+      },
+      {
+        "strain": "Og Badazz",
+        "weight": "7g",
+        "price": "price_1MwYauG6XH5BieNngQA7Ci7f",
+        "quantity": "0"
+      },
+      {
+        "strain": "Og Badazz",
+        "weight": "14g",
+        "price": "price_1MwYbUG6XH5BieNnmBU5wUbm",
+        "quantity": "0"
+      },
+      {
+        "strain": "Og Badazz",
+        "weight": "28g",
+        "price": "price_1MwYckG6XH5BieNnvx3BcVNT",
+        "quantity": "0"
+      }
+    ]
+  },
+  {
+    "name": "Alice",
+    "products": [
+      {
+        "strain": "Alice",
+        "weight": "1g",
+        "price": "price_1MwYglG6XH5BieNnkHNs3bi2",
+        "quantity": "0"
+      },
+      {
+        "strain": "Alice",
+        "weight": "2g",
+        "price": "price_1MwYhDG6XH5BieNnkk2rWvA9",
+        "quantity": "0"
+      },
+      {
+        "strain": "Alice",
+        "weight": "3.5g",
+        "price": "price_1MwYhpG6XH5BieNnnYiowK9b",
+        "quantity": "0"
+      },
+      {
+        "strain": "Alice",
+        "weight": "7g",
+        "price": "price_1MwYiCG6XH5BieNnfoY5O1dA",
+        "quantity": "0"
+      },
+      {
+        "strain": "Alice",
+        "weight": "14g",
+        "price": "price_1MwYicG6XH5BieNnDAAPXYEk",
+        "quantity": "0"
+      },
+      {
+        "strain": "Alice",
+        "weight": "28g",
+        "price": "price_1MwYj2G6XH5BieNnabNyws3Y",
+        "quantity": "0"
+      }
+    ]
+  },
+  {
+    "name": "Spicy Bitch",
+    "products": [
+      {
+        "strain": "Spicy Bitch",
+        "weight": "1g",
+        "price": "price_1MwYm1G6XH5BieNnCi52K7RN",
+        "quantity": "0"
+      },
+      {
+        "strain": "Spicy Bitch",
+        "weight": "2g",
+        "price": "price_1MwYmQG6XH5BieNnKGKHP4jg",
+        "quantity": "0"
+      },
+      {
+        "strain": "Spicy Bitch",
+        "weight": "3.5g",
+        "price": "price_1MwYmpG6XH5BieNn83QU6cFx",
+        "quantity": "0"
+      },
+      {
+        "strain": "Spicy Bitch",
+        "weight": "7g",
+        "price": "price_1MwYnHG6XH5BieNnk4SeytYX",
+        "quantity": "0"
+      },
+      {
+        "strain": "Spicy Bitch",
+        "weight": "14g",
+        "price": "price_1MwYnhG6XH5BieNnBDd6F2ZC",
+        "quantity": "0"
+      },
+      {
+        "strain": "Spicy Bitch",
+        "weight": "28g",
+        "price": "price_1MwYo3G6XH5BieNnKlMoOKzf",
+        "quantity": "0"
+      }
+    ]
+  },
+  {
+    "name": "Yumbolt",
+    "products": [
+      {
+        "strain": "Yumbolt",
+        "weight": "1g",
+        "price": "price_1MwYrWG6XH5BieNnshhccKjl",
+        "quantity": "0"
+      },
+      {
+        "strain": "Yumbolt",
+        "weight": "2g",
+        "price": "price_1MwYrtG6XH5BieNnkunV9kBF",
+        "quantity": "0"
+      },
+      {
+        "strain": "Yumbolt",
+        "weight": "3.5g",
+        "price": "price_1MwYsJG6XH5BieNnk5ovqDEz",
+        "quantity": "0"
+      },
+      {
+        "strain": "Yumbolt",
+        "weight": "7g",
+        "price": "price_1MwYspG6XH5BieNn9dlRU5N2",
+        "quantity": "0"
+      },
+      {
+        "strain": "Yumbolt",
+        "weight": "14g",
+        "price": "price_1MwYtOG6XH5BieNnks7XNX5x",
+        "quantity": "0"
+      },
+      {
+        "strain": "Yumbolt",
+        "weight": "28g",
+        "price": "price_1MwYtoG6XH5BieNnSLa8TKUY",
+        "quantity": "0"
+      }
+    ]
+  },
+  {
+    "name": "White Yoda",
+    "products": [
+      {
+        "strain": "White Yoda",
+        "weight": "1g",
+        "price": "price_1MwYwtG6XH5BieNn5pdAkkkU",
+        "quantity": "0"
+      },
+      {
+        "strain": "White Yoda",
+        "weight": "2g",
+        "price": "price_1MwYxFG6XH5BieNniaMVvbJB",
+        "quantity": "0"
+      },
+      {
+        "strain": "White Yoda",
+        "weight": "3.5g",
+        "price": "price_1MwYxnG6XH5BieNnCQIb3zMg",
+        "quantity": "0"
+      },
+      {
+        "strain": "White Yoda",
+        "weight": "7g",
+        "price": "price_1MwYyJG6XH5BieNnB2ex9rNy",
+        "quantity": "0"
+      },
+      {
+        "strain": "White Yoda",
+        "weight": "14g",
+        "price": "price_1MwYyiG6XH5BieNnwfJUmMvp",
+        "quantity": "0"
+      },
+      {
+        "strain": "White Yoda",
+        "weight": "28g",
+        "price": "price_1MwYzWG6XH5BieNnOs1AeZas",
+        "quantity": "0"
+      }
+    ]
+  },
+  {
+    "name": "White Afghan",
+    "products": [
+      {
+        "strain": "White Afghan",
+        "weight": "1g",
+        "price": "price_1MwZ48G6XH5BieNnaRU0Kq6v",
+        "quantity": "0"
+      },
+      {
+        "strain": "White Afghan",
+        "weight": "2g",
+        "price": "price_1MwZ4hG6XH5BieNnCm7Xbi6b",
+        "quantity": "0"
+      },
+      {
+        "strain": "White Afghan",
+        "weight": "3.5g",
+        "price": "price_1MwZ5TG6XH5BieNntRDUYf59",
+        "quantity": "0"
+      },
+      {
+        "strain": "White Afghan",
+        "weight": "7g",
+        "price": "price_1MwZ5qG6XH5BieNnH8HZXxP5",
+        "quantity": "0"
+      },
+      {
+        "strain": "White Afghan",
+        "weight": "14g",
+        "price": "price_1MwZ7NG6XH5BieNnUbeXLfE9",
+        "quantity": "0"
+      },
+      {
+        "strain": "White Yoda",
+        "weight": "28g",
+        "price": "price_1MwZ7NG6XH5BieNnUbeXLfE9",
+        "quantity": "0"
+      }
+    ]
+  }
+]

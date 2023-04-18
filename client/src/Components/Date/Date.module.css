@@ -1,0 +1,202 @@
+@keyframes dateAnimation {
+    0% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(0);
+        filter: blur(0);
+    }
+}
+
+@-moz-keyframes dateAnimation {
+    0% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(0);
+        filter: blur(0);
+    }
+}
+
+@-webkit-keyframes dateAnimation {
+    0% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(0);
+        filter: blur(0);
+    }
+}
+
+@-o-keyframes dateAnimation {
+    0% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(0);
+        filter: blur(0);
+    }
+}
+
+@keyframes hoursAnimation {
+    0% {
+        transform: translateX(1000px);
+    }
+    100% {
+        transform: translateX(0);
+        filter: blur(0);
+    }
+}
+
+@-moz-keyframes hoursAnimation {
+    0% {
+        transform: translateX(1000px);
+    }
+    100% {
+        transform: translateX(0);
+        filter: blur(0);
+    }
+}
+
+@-webkit-keyframes hoursAnimation {
+    0% {
+        transform: translateX(1000px);
+    }
+    100% {
+        transform: translateX(0);
+        filter: blur(0);
+    }
+}
+
+@-o-keyframes hoursAnimation {
+    0% {
+        transform: translateX(1000px);
+    }
+    100% {
+        transform: translateX(0);
+        filter: blur(0);
+    }
+}
+
+
+.time-wrapper {
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+    overflow: hidden;
+}
+
+.date,
+.hours {
+    box-shadow: 0 8px 16px -8px #adadad;
+    -webkit-box-shadow: 0 8px 16px -8px #adadad;
+    -moz-box-shadow: 0 8px 16px -8px #adadad;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 700;
+    transition: all 0.9s ease;
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3 ease;
+}
+
+.date {
+    width: 21rem;
+    height: 2.5rem;
+    color: #27ae60;
+    border: 2px solid #27ae60;
+    border-radius: 5px;
+}
+
+.date.visible {
+    display: flex;
+    -webkit-animation: 1s ease 0s 1 dateAnimation;
+    -moz-animation: 1s ease 0s 1 dateAnimation;
+    -o-animation: 1s ease 0s 1 dateAnimation;
+    animation: 1s ease 0s 1 dateAnimation;
+}
+
+.hours {
+    width: 9rem;
+    height: 2.5rem;
+    color: var(--clr--blue);
+    background: transparent;
+    border: 2px solid var(--clr--blue) !important;
+    cursor: pointer;
+    border-radius: none !important;
+
+    gap: 5px;
+}
+
+.hours.visible-hours {
+    display: flex;
+    -webkit-animation: 1s ease 0s 1 hoursAnimation;
+    -moz-animation: 1s ease 0s 1 hoursAnimation;
+    -o-animation: 1s ease 0s 1 hoursAnimation;
+    animation: 1s ease 0s 1 hoursAnimation;
+}
+
+.hours:hover,
+.hours:focus {
+    background-color: var(--clr--blue);
+}
+
+.hours:focus {
+    box-shadow: none !important;
+}
+
+.open {
+    color: #27ae60;
+    border: 2px solid #27ae60;
+}
+
+.closed {
+    color: rgba(255, 0, 0, 0.8);
+    border: 2px solid rgba(255, 0, 0, 0.8);
+}
+
+@media (max-width: 960px) {
+    .date,
+    .hours {
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .date {
+        width: 19.5rem;
+        padding: 0 0.1rem;
+    }
+
+    .hours {
+        width: 8.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .time-wrapper {
+        gap: 0.9rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .time-wrapper {
+        flex-direction: column;
+    }
+
+    .date {
+        width: 18.5rem;
+        font-size: 0.75rem;
+    }
+
+    .hours {
+        width: 8rem;
+        font-size: 0.75rem;
+    }
+}

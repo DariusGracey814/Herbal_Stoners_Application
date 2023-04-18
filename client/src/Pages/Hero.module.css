@@ -1,0 +1,251 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 82vh;
+    text-align: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.gradient {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, rgba(10, 44, 26, 0.9), rgba(34, 58, 94, 0.9));
+    z-index: 2;
+}
+
+.hero-wrapper {
+    z-index: 3;
+}
+
+/* Add rgba when menu is active */
+.menuActive {
+    position: absolute; 
+    top: 6.5rem;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    z-index: 4;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(10%) scale(0.95);
+        opacity: 0.4;
+    }
+    100% {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes slideIn {
+    0% {
+        transform: translateY(10%) scale(0.95);
+        opacity: 0.4;
+    }
+    100% {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slideIn {
+    0% {
+        transform: translateY(10%) scale(0.95);
+        opacity: 0.4;
+    }
+    100% {
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.d-none {
+    display: none;
+    transform: translate(-1000px);
+}
+
+.herbal-text,
+.stoner-text,
+.date-text {
+    font-family: var(--font--yuki);
+    color: var(--clr--light);
+    text-shadow: 0 0 0.5rem #000;
+}
+
+.herbal-text,
+.stoner-text {
+    line-height: 0.8;
+    -webkit-animation: 1s ease 0s 1 FadeIn;
+    -moz-animation: 1s ease 0s 1 FadeIn;
+    -o-animation: 1s ease 0s 1 FadeIn;
+    animation: 1s ease 0s 1 FadeIn;
+}
+
+.herbal-text {
+    font-size: 9rem;
+}
+
+.stoner-text {
+    font-size: 7rem;
+    margin-bottom: 0.5rem;
+}
+
+.date-text {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-btn--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    -webkit-animation: 1s ease-in 0s 1 slideIn;
+    -moz-animation: 1s ease-in 0s 1 slideIn;
+    -o-animation: 1s ease-in 0s 1 slideIn;
+    animation: 1s ease-in 0s 1 slideIn;
+}
+
+.hero-btn {
+    padding: 1.5rem 2.4rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0 2px var(--clr--light);
+    -webkit-box-shadow: 0 0 0 2px var(--clr--light);
+    -moz-box-shadow: 0 0 0 2px var(--clr--light);
+}
+
+.hero-btn a {
+    text-decoration: none;
+    color: var(--clr--light);
+}
+
+.hero-btn a:hover {
+    color: var(--clr--light);
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+    .hero {
+        height: 70vh;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero {
+        height: 72vh;
+    }
+
+    .herbal-text {
+        font-size: 7rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .stoner-text {
+        font-size: 6rem;
+    }
+    
+    .date-text {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-btn {
+        padding: 1.3rem 2.1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-wrapper {
+        margin-top: -3rem;
+    }
+    .herbal-text {
+        font-size: 5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .stoner-text {
+        font-size: 4rem;
+    }
+    
+    .date-text {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-btn {
+        padding: 1rem 1.5rem;
+    }
+}
+
+@media (max-width: 440px) {
+    .hero {
+        padding: 0 0.5rem;
+    }
+
+    .herbal-text {
+        font-size: 3.7rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .stoner-text {
+        font-size: 3.5rem;
+    }
+    
+    .date-text {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-btn--wrapper {
+        gap: 1rem;
+    }
+
+    .hero-btn {
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+
+}

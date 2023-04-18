@@ -1,0 +1,60 @@
+.location {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.info-heading--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-window {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 11rem);
+    top: -5%;
+    width: 15rem;
+    padding: 0.5rem 0.8rem;
+    background-color: var(--clr--light);
+    box-shadow: 0 8px 16px -8px #adadad;
+}
+
+.logo {
+    width: 23px;
+    height: 23px;
+}
+
+.info-heading {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+ 
+.info-text {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.info-btn {
+    border: none;
+    background: transparent;
+    color: #000;
+    font-weight: 500;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.info-btn:hover {
+    opacity: 1;
+    background: none !important;
+    color: #000;
+}
+
+.marker-directions {
+    font-size: 0.9rem;
+}

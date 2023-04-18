@@ -1,0 +1,74 @@
+.cartContainer {
+  max-height: 535px;
+  padding: 0.7em 0 11em;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+.card {
+  margin-bottom: 1em;
+  position: relative;
+  border: none;
+  box-shadow: #cbcbcb 1px 0.2em 0.6em;
+  width: 95%;
+  margin: 0 auto 1em;
+}
+
+.cartBtn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  border: none;
+  background: none;
+  font-size: 0.8rem;
+  color: var(--clr--green);
+  cursor: pointer;
+}
+
+.card-title {
+  font-size: 1rem;
+  max-width: 200px;
+}
+
+.cart-breeder {
+  margin-top: -0.5em;
+  font-size: 0.75em;
+  font-weight: 400;
+}
+
+.cart-thcInfo {
+  font-size: 0.7em;
+  margin: -0.8em 0 2em;
+}
+
+.wrapper-img {
+  display: flex;
+}
+
+.cart-text--wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quantity-price {
+  font-size: 0.9rem;
+}
+
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: -1em;
+}
+
+.cart-update-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0 0.2em;
+  cursor: pointer;
+}
+
+.price-wrapper {
+  padding-top: 0.5em;
+}

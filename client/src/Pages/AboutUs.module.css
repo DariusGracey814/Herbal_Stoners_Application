@@ -1,0 +1,171 @@
+.about-us {
+    width: 100%;
+}
+
+.about-image {
+    position: relative;
+    width: inherit;
+    height: 150px;
+    background-size: cover;
+    z-index: -1;
+}
+
+.gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, rgba(10, 44, 26, 0.9), rgba(34, 58, 94, 0.9));
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    transition: all 0.3 ease;
+}
+
+.aboutUs-content {
+    background: #f4f9fc;
+    box-shadow: 2px 4px 13px 2px rgba(173,173,173,0.45);
+    -webkit-box-shadow: 2px 4px 13px 2px rgba(173,173,173,0.45);
+    -moz-box-shadow: 2px 4px 13px 2px rgba(173,173,173,0.45);
+    color: var(--clr--blue);
+    margin: 2rem 0;
+    padding: 3rem;
+}
+
+.content1 {
+    margin-bottom: 3rem;
+}
+
+.para1-h2,
+.para2-h2 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.para1-h2 {
+    font-size: 2.2rem;
+}
+
+.para2-h2 {
+    font-size: 1.8rem;
+}
+
+.para {
+    opacity: 0.83;
+    line-height: 1.6;
+}
+
+.para a {
+    color: var(--clr--blue);
+    font-weight: 500;
+}
+
+.btn {
+    margin-top: 1rem;
+}
+
+@media (max-width: 960px) {
+    .about-image h1 {
+        font-size: 2.5rem;
+    }
+
+    .para1-h2 {
+        font-size: 2rem;
+    }
+
+    .para2-h2 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 860px) {
+    .about-image h1 {
+        font-size: 2.2rem;
+    }
+
+    .para1-h2 {
+        font-size: 1.8rem;
+    }
+
+    .para2-h2 {
+        font-size: 1.6rem;
+    }
+
+    .para {
+        font-size: 0.93rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutUs-content {
+        margin: 0;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+
+        display: grid;
+    }
+
+    .para1-h2,
+    .para2-h2,
+    .para {
+        text-align: center;
+    }
+
+    .para1-h2 {
+        font-size: 1.8rem;
+    }
+
+    .para2-h2 {
+        font-size: 1.6rem;
+    }
+
+    .para {
+        font-size: 0.93rem;
+        margin-top: 1.8rem;
+    }
+
+    .btn {
+        width: 300px;
+        margin-top: 2rem;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 560px) {
+    .aboutUs-content {
+        padding: 2rem;
+    }
+
+    .about-image h1 {
+        font-size: 2rem;
+    }
+    .para1-h2 {
+        font-size: 1.6rem;
+    }
+
+    .para2-h2 {
+        font-size: 1.5rem;
+    }
+
+    .para {
+        font-size: 0.9rem;
+        margin-top: 1.8rem;
+    }
+
+    .btn {
+        width: 175px;
+        margin-top: 2rem;
+        justify-self: center;
+    }
+}

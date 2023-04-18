@@ -1,0 +1,132 @@
+.subscribe {
+    width: 100%;
+    background-size: cover;
+}
+
+.overlay {
+    width: inherit;
+    height: 100%;
+    background: linear-gradient(to right, rgba(10, 44, 26, 0.9), rgba(34, 58, 94, 0.9));
+}
+
+.subscribe-content {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    gap: 2rem;
+    padding: 3rem 1rem;
+}
+
+.subscribe-text,
+.form-wrapper {
+    background: var(--clr--light);
+    color: var(--clr--blue);
+    box-shadow: 0 8px 16px -8px #000;
+    -webkit-box-shadow: 0 8px 16px -8px #000;
+    -moz-box-shadow: 0 8px 16px -8px #000;
+    border-radius: 5px;
+}
+
+.subscribe-text {
+    padding: 3rem 2rem;
+}
+
+.subscribe-text h1 {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.form-wrapper {
+    position: relative;
+    padding: 1.5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.required {
+    font-size: 0.85rem;
+}
+
+.form-input {
+    padding: 1rem;
+    background: #f4f9fc;
+    box-shadow: 0 6px 10px -8px #adadad;
+    -webkit-box-shadow: 0 8px 16px -8px #adadad;
+    -moz-box-shadow: 0 8px 16px -8px #adadad;
+}
+
+@media (max-width: 1060px) {
+    .subscribe-content {
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    .form-wrapper {
+        padding: 1rem 1.5rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .subscribe-text h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 860px) {
+    .subscribe-content {
+        grid-template-columns: 1fr;
+    }
+
+    .subscribe-text,
+    .form-wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .subscribe-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .form-wrapper p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 660px) {
+    .subscribe-text,
+    .form-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 560px) {
+    .subscribe-text,
+    .form-wrapper {
+        width: 95%;
+    }
+
+    .form-wrapper {
+        padding: 1.5rem;
+    }
+
+    .subscribe-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .form-input::placeholder,
+    .form-btn,
+    .text {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .subscribe-text h1 {
+        font-size: 1.3rem;
+    }
+}
+
+

@@ -1,0 +1,112 @@
+export const edibleFormat = [
+  {
+    breeder: "Rise",
+    name: "Big Bang Tea",
+    price: 8,
+    type: "Hybrid",
+    thc: "88mg",
+  },
+  {
+    breeder: "MKX",
+    name: "Healing Tea",
+    price: 10,
+    type: "Hybrid",
+    thc: "40mg",
+    cbd: "49mg",
+  },
+  {
+    breeder: "MKX",
+    name: "Canna Athlete Nectar",
+    price: 8,
+    type: "Indica",
+    thc: "75mg",
+  },
+  {
+    breeder: "MKX",
+    name: "Blue Fever Fast Acting Tropix Gummies",
+    price: 12,
+    type: "Indica",
+    thc: "100mg",
+  },
+  {
+    breeder: "MKX",
+    name: "Cali Lime Gummies",
+    price: 8,
+    type: "Hybrid",
+    thc: "98mg",
+  },
+
+  // 5
+  {
+    breeder: "Mojo Chocolates",
+    name: "Cookie Bar Bites",
+    price: 10,
+    type: "Hybrid",
+    thc: "188mg",
+  },
+  {
+    breeder: "Mojo Chocolates",
+    name: "Crispy Wafer Bites",
+    price: 10,
+    type: "Hybrid",
+    thc: "200mg",
+  },
+  {
+    breeder: "MXK",
+    name: "Gorilla Grapefruit Gummies",
+    price: 6,
+    type: "Hybrid",
+    thc: "97mg",
+  },
+  {
+    breeder: "MKX",
+    name: "Green Apple Xxtra Strength Gummies",
+    price: 12,
+    type: "Hybrid",
+    thc: "201mg",
+  },
+  {
+    breeder: "MKX",
+    name: "Juicy Watermelon Gummies",
+    price: 6,
+    type: "Hybrid",
+    thc: "104mg",
+  },
+
+  // 5
+  {
+    breeder: "MKX",
+    name: "lemon Haze Gummies",
+    price: 6,
+    type: "Hybrid",
+    thc: "102mg",
+  },
+  {
+    breeder: "Mojo Chocolates",
+    name: "Nuggy Caramel Peanut Bites",
+    price: 11,
+    type: "Hybrid",
+    thc: "200mg",
+  },
+  {
+    breeder: "MKX",
+    name: "Orange Twist Fast Acting Tropix Gummies",
+    price: 8,
+    type: "Hybrid",
+    thc: "96mg",
+  },
+  {
+    breeder: "Mojo Chocolates",
+    name: "Peanut Butter Minis",
+    price: 11,
+    type: "Hybrid",
+    thc: "201mg",
+  },
+  {
+    breeder: "MKX",
+    name: "Pineapple Express Xxtra Strength Gummies",
+    price: 6,
+    type: "Hybrid",
+    thc: "200mg",
+  },
+];

@@ -1,0 +1,51 @@
+.sort {
+    margin-top: 1.7em;
+    padding: 1em 1em;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.6);
+    display: flex;
+    justify-content: space-between;
+}
+
+.sort h1 {
+    font-size: 1.85rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.select,
+.select:focus {
+    width: 200px;
+    text-align: center;
+    padding: 0 0.8em 0 0;
+    font-size: 0.9rem;
+    border-radius: 2em;
+    color: rgba(34, 58, 94, 0.7);
+}
+
+@media (max-width: 1230px) {
+    .sort {
+        padding: 1em;
+    }
+}
+
+@media (max-width: 800px) {
+    .sort h1 {
+        font-size: 1.55rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    .select,
+    .select:focus {
+        width: 120px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 560px) {
+    .sort h1 {
+        font-size: 1.45rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+}

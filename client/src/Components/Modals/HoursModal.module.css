@@ -1,0 +1,53 @@
+.hoursModal {
+    width: 350px;
+    height: 400px;
+    
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    overflow: hidden;
+}
+
+.modal-header {
+    width: 100%;
+
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.hours-modal--title {
+    font-size: 1.1rem;
+}
+
+.close-btn {
+    background-color: transparent;
+    border: none;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-right: -0.7rem;
+}
+
+.close-btn:hover {
+    background: none !important;
+    border: none;
+    opacity: 1;
+}
+
+.hours-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hours-weekday,
+.hours-time {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 560px) {
+    .hoursModal {
+        width: 290px;
+        height: 355px;
+    }
+}
