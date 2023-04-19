@@ -55,7 +55,7 @@ function Checkout() {
   return (
     <section className={classes["checkout-section"]}>
       <Container>
-        {checkoutState ? <LoadingSpinner /> : null}
+        {<LoadingSpinner />}
         <div className={classes["checkout-wrapper"]}>
           <div className={classes["cartItems-wrapper"]}>
             <CartItems />
