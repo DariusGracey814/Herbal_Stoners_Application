@@ -1,4 +1,4 @@
-import React, { Suspense, lazy, useContext } from "react";
+import React, { Suspense, lazy, useContext, useEffect } from "react";
 import { SortContext } from "../context/sort-context";
 import { Form } from "react-bootstrap";
 import ProductSort from "../Components/ProductSort/ProductSort";
