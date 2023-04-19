@@ -22,22 +22,20 @@ function Checkout() {
   // Purchase items handler
   const checkoutHandler = async () => {
     try {
-      console.log(items);
-      const res = await fetch(
-        "https://herbalstonerrestapi.netlify.app/checkout",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ customerCart: items }),
-        }
-      );
+      const res = await fetch("http://localhost:4000/checkout", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ customerCart: items }),
+      });
 
       const data = await res.json();
 
       if (data.url) {
         window.location.assign(data.url);
+      } else {
+        console.log("Error: Getting stripe checkout session");
       }
     } catch (error) {
       return error.message;
