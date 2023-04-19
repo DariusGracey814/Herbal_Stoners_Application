@@ -1,11 +1,13 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { CartContext } from "../../../context/cart-context";
 import Container from "../../UI/Container/Container";
+import LoadingSpinner from "../../LoadingSpinner/LoadingSpinner";
 import CartItems from "../CartItems";
 import classes from "./Checkout.module.css";
 
 function Checkout() {
+  const [checkoutState, setCheckoutState] = useState(false);
   const { getCartTotal, itemCounter, items } = useContext(CartContext);
   let tax = getCartTotal() * 0.06;
   let orderTotal = tax + getCartTotal();
@@ -33,12 +35,15 @@ function Checkout() {
         }
       );
 
+      // Set Load state = true
+      setCheckoutState(true);
       const data = await res.json();
 
       console.log(data);
 
       if (data.url) {
         window.location.assign(data.url);
+        setCheckoutState(false);
       } else {
         console.log("Error: Getting stripe checkout session");
       }
@@ -50,6 +55,7 @@ function Checkout() {
   return (
     <section className={classes["checkout-section"]}>
       <Container>
+        {checkoutState ? <LoadingSpinner /> : null}
         <div className={classes["checkout-wrapper"]}>
           <div className={classes["cartItems-wrapper"]}>
             <CartItems />
