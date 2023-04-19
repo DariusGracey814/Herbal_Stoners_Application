@@ -1,4 +1,5 @@
-import React, { useState, useEffect, Suspense, lazy } from "react";
+import React, { useState, useEffect, Suspense, lazy, useContext } from "react";
+import { SortContext } from "../context/sort-context";
 import { Form } from "react-bootstrap";
 
 import ProductSort from "../Components/ProductSort/ProductSort";
@@ -14,8 +15,10 @@ const ExtractCard = lazy(() => import("../Components/ExtractCard/ExtractCard"));
 
 function Extracts() {
   const [load, setLoad] = useState(true);
+  const { setSortProducts } = useContext(SortContext);
 
   useEffect(() => {
+    setSortProducts(false);
     setTimeout(() => {
       setLoad(false);
     }, 1000);

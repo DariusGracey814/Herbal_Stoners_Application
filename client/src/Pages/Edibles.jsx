@@ -1,4 +1,5 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useContext } from "react";
+import { SortContext } from "../context/sort-context";
 import { Form } from "react-bootstrap";
 import ProductSort from "../Components/ProductSort/ProductSort";
 
@@ -14,6 +15,12 @@ const MenuNavigation = lazy(() =>
 const EdibleCard = lazy(() => import("../Components/EdibleCard/EdibleCard"));
 
 function Edibles() {
+  const { setSortProducts } = useContext(SortContext);
+
+  useEffect(() => {
+    setSortProducts(false);
+  }, []);
+
   return (
     <section className={classes.edibles}>
       <Directory3 main="menu" location="/menu" current="edibles" />
