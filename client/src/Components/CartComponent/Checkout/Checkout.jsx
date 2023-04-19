@@ -22,15 +22,20 @@ function Checkout() {
   // Purchase items handler
   const checkoutHandler = async () => {
     try {
-      const res = await fetch("http://localhost:4000/checkout", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ customerCart: items }),
-      });
+      const res = await fetch(
+        "https://herbal-stoners-backend-kodinglab.onrender.com/checkout",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ customerCart: items }),
+        }
+      );
 
       const data = await res.json();
+
+      console.log(data);
 
       if (data.url) {
         window.location.assign(data.url);
