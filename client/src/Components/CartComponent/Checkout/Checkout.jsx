@@ -39,8 +39,6 @@ function Checkout() {
       setCheckoutState(true);
       const data = await res.json();
 
-      console.log(data);
-
       if (data.url) {
         window.location.assign(data.url);
         setCheckoutState(false);
@@ -55,7 +53,7 @@ function Checkout() {
   return (
     <section className={classes["checkout-section"]}>
       <Container>
-        {<LoadingSpinner />}
+        {checkoutState ? <LoadingSpinner /> : null}
         <div className={classes["checkout-wrapper"]}>
           <div className={classes["cartItems-wrapper"]}>
             <CartItems />
