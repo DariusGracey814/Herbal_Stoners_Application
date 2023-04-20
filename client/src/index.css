@@ -6,8 +6,8 @@
 
 :root {
   /* Fonts */
-  --font--poppins: 'Poppins', sans-serif;
-  --font--yuki: 'Lobster', cursive;
+  --font--poppins: "Poppins", sans-serif;
+  --font--yuki: "Lobster", cursive;
 
   /* Colors */
   --clr--light: #f3f5f4;
@@ -16,7 +16,6 @@
   --clr--green: #0a2c1a;
   --clr--blue: #223a5e;
   --clr--pink: #fce0e0;
-
 }
 
 html {
@@ -29,34 +28,50 @@ body {
   font-weight: 400;
 }
 
-
 /* Global btn styles */
 .hero-btn--green,
 .hero-btn--blue {
-    color: var(--clr--light);
-    border: none;
-    transition: all 0.3s ease;
-    cursor: pointer;
+  color: var(--clr--light);
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .hero-btn--green {
-    background-color: var(--clr--green) !important;
+  background-color: var(--clr--green) !important;
 }
 
 .hero-btn--green:hover {
-    background-color: #092817 !important;
+  background-color: #092817 !important;
 }
 
 .hero-btn--blue {
-    background-color: var(--clr--blue) !important;
+  background-color: var(--clr--blue) !important;
 }
 
 .hero-btn--blue:hover {
-    background-color: #1b2e4b !important;
+  background-color: #1b2e4b !important;
+}
+
+#sortBtn {
+  border: none !important;
+  outline: none !important;
+  padding: 0.5em 1em;
+  border-radius: 3em;
+  background: var(--clr--green);
+  color: var(--clr--light);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#sortBtn:active {
+  outline: none !important;
+  border: none !important;
 }
 
 @keyframes slideFade {
-  0%{
+  0% {
     transform: translateX(-300px) scale(0.5);
   }
   100% {
@@ -64,7 +79,7 @@ body {
   }
 }
 @-moz-keyframes slideFade {
-  0%{
+  0% {
     transform: translateX(-300px) scale(0.5);
   }
   100% {
@@ -72,7 +87,7 @@ body {
   }
 }
 @-webkit-keyframes slideFade {
-  0%{
+  0% {
     transform: translateX(-300px) scale(0.5);
   }
   100% {
@@ -85,4 +100,3 @@ body {
   -webkit-animation: 1s ease 0s 1 slideFade;
   -moz-animation: 1s ease 0s 1 slideFade;
 }
-

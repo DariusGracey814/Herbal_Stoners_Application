@@ -28,18 +28,21 @@ function FlowerCard() {
   };
 
   useEffect(() => {
-    if (!sort) {
-      const defaultStrains = [...strainData.slice()];
-      setWeedInfo(defaultStrains);
-    } else {
-      const sorted = strainData.sort(function (a, b) {
+    if (sort) {
+      // Shallow copy
+      const copy = strainData.slice();
+
+      const sorted = copy.sort(function (a, b) {
         if (a.name[0] > b.name[0]) return 1;
         if (a.name[0] < b.name[0]) return -1;
         return 0;
       });
+
       setWeedInfo(sorted);
+    } else {
+      setWeedInfo(strainData);
     }
-  }, [setSortProducts]);
+  }, [setSortProducts, sort]);
 
   // Creating Pagination of all strains
   const displayStrains = weedInfo

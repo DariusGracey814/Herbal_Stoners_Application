@@ -10,8 +10,7 @@ function SortCartProvider({ children }) {
 
   // Set sort products state
   function setSortProducts(state) {
-    console.log("Sort state: ", state);
-    state ? setSortOption(true) : setSortOption(false);
+    setSortOption((prevState) => !prevState);
   }
 
   const sortItems = {
