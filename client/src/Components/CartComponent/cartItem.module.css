@@ -14,12 +14,12 @@
   margin: 0 auto 1em;
 }
 
-.cartBtn_Wrapper {
-  display: flex;
-  justify-content: end;
+.cardBody {
+  display: grid;
 }
 
 .cartBtn {
+  justify-self: end;
   border: none;
   background: none;
   font-size: 0.8rem;

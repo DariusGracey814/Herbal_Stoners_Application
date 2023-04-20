@@ -44,25 +44,25 @@ function CartItem({
 
   const deleteAll = (evt) => {
     const id = evt.currentTarget.parentNode.parentNode.id;
+
     const weight =
-      evt.currentTarget.parentNode.childNodes[0].childNodes[1].childNodes[3]
+      evt.currentTarget.parentNode.childNodes[1].childNodes[1].childNodes[3]
         .childNodes[0].innerText;
 
     const name =
-      evt.currentTarget.parentNode.childNodes[0].childNodes[1].childNodes[0].innerText.split(
+      evt.currentTarget.parentNode.childNodes[1].childNodes[1].childNodes[0].innerText.split(
         " | "
       )[0];
+
     deleteAllProducts({ id: +id, weight: weight, name: name });
   };
 
   return (
     <Card id={id} className={classes.card}>
-      <Card.Body>
-        <div className={classes["cartBtn_Wrapper"]}>
-          <button className={classes.cartBtn} type="button" onClick={deleteAll}>
-            <i className="fa-solid fa-trash"></i>
-          </button>
-        </div>
+      <Card.Body className={classes.cardBody}>
+        <button className={classes.cartBtn} type="button" onClick={deleteAll}>
+          <i className="fa-solid fa-trash"></i>
+        </button>
         <div className={classes["wrapper-img"]}>
           <img
             src={`${imageSrc ? imageSrc : img}`}
