@@ -114,7 +114,6 @@ function CartProvider({ children }) {
         JSON.stringify({ cart: cartProducts })
       );
       setProductCountTracker((prevCount) => prevCount + 1);
-      console.log("Quantity and price updated");
     }
   }
 
@@ -160,7 +159,6 @@ function CartProvider({ children }) {
       };
 
       if (cartProducts[matchProduct].quantity > 1) {
-        console.log("More than 1 item");
         // Update cart Product
         cartProducts[matchProduct] = { ...existingItem };
         sessionStorage.setItem(

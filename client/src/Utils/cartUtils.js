@@ -52,27 +52,30 @@ class CartUtils {
   // Retrieve Flower information
   getFlowerInfo(evt) {
     // Order Information
-    const id = evt.target.parentNode.parentNode.parentNode.childNodes[0].id;
+    const id = evt.target.parentNode.parentNode.parentNode.childNodes[0]?.id;
 
     const orderBreeder =
       evt.target.parentNode.parentNode.parentNode.childNodes[0].childNodes[1]
-        .childNodes[0].innerText;
+        .childNodes[0]?.innerText;
+
     const orderName =
       evt.target.parentNode.parentNode.parentNode.childNodes[0].childNodes[1]
-        .childNodes[1].innerText;
+        .childNodes[1]?.innerText;
+
     const orderThcLevel =
-      evt.target.parentNode.parentNode.parentNode.childNodes[0].childNodes[1].childNodes[2].innerText.replace(
+      evt.target.parentNode.parentNode.parentNode.childNodes[0].childNodes[1].childNodes[2]?.innerText.replace(
         "\n\n",
         ""
       );
-    const orderWeight = evt.target.childNodes[0].innerText;
-    const orderPrice = evt.target.childNodes[1].innerText.slice(1);
+
+    const orderWeight = evt.target.childNodes[0]?.innerText;
+
+    const orderPrice = evt.target.childNodes[1]?.innerText.slice(1);
 
     const img =
       evt.target.parentNode.parentNode.parentNode.childNodes[0].childNodes[0]
         .src;
 
-    // Customer chosen order
     const order = {
       id: +id,
       img: img,
@@ -84,9 +87,58 @@ class CartUtils {
       quantity: 1,
     };
 
-    const stripeMatch = this.matchItemWithStipeDataFlower(order);
+    let stripeMatch = {};
+
+    if (id) {
+      console.log(order);
+      stripeMatch = this.matchItemWithStipeDataFlower(order);
+    } else {
+      const orderC = this.chromeStrain(evt);
+      stripeMatch = this.matchItemWithStipeDataFlower(orderC);
+    }
 
     return stripeMatch;
+  }
+
+  chromeStrain(evt) {
+    const c_id =
+      evt.target.parentNode.parentNode.parentNode.parentNode.childNodes[0].id;
+
+    const c_orderBreeder =
+      evt.target.parentNode.parentNode.parentNode.parentNode.childNodes[0]
+        .childNodes[1].childNodes[0].innerText;
+
+    const c_orderName =
+      evt.target.parentNode.parentNode.parentNode.parentNode.childNodes[0]
+        .childNodes[1].childNodes[1].innerText;
+
+    const c_orderThcLevel =
+      evt.target.parentNode.parentNode.parentNode.parentNode.childNodes[0].childNodes[1].childNodes[2].innerText
+        .replace("\n", " ")
+        .replace("\n", " ");
+
+    const c_orderWeight = evt.target.parentNode.childNodes[0].innerText;
+
+    const c_orderPrice = Math.ceil(
+      +evt.target.parentNode.childNodes[1].innerText.replace("$", "")
+    );
+
+    const c_img =
+      evt.target.parentNode.parentNode.parentNode.parentNode.childNodes[0]
+        .childNodes[0].src;
+
+    const orderC = {
+      id: +c_id,
+      img: c_img,
+      breeder: c_orderBreeder,
+      name: c_orderName,
+      thcLevel: c_orderThcLevel,
+      weight: c_orderWeight,
+      price: c_orderPrice,
+      quantity: 1,
+    };
+
+    return orderC;
   }
 
   // Retrieve Single Price items (edibles / Extracts / Vaporizers)

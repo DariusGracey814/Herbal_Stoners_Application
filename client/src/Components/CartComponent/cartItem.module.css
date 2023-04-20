@@ -14,10 +14,12 @@
   margin: 0 auto 1em;
 }
 
+.cartBtn_Wrapper {
+  display: flex;
+  justify-content: end;
+}
+
 .cartBtn {
-  position: absolute;
-  top: 15px;
-  right: 20px;
   border: none;
   background: none;
   font-size: 0.8rem;

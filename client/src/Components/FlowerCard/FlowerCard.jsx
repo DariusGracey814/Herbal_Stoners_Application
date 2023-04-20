@@ -7,6 +7,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import strainData from "../../Utils/strains";
 import ReactPaginate from "react-paginate";
 import classes from "./FlowerCard.module.css";
+import SortUtils from "../../Utils/sortUtils";
 
 const WeedPrices = lazy(() => import("../WeedPrices/WeedPrices"));
 
@@ -19,6 +20,7 @@ function FlowerCard() {
   const postPerPage = 10;
   const pagesVisited = pageNumber * postPerPage;
   const pageCount = Math.ceil(weedInfo.length / postPerPage);
+  const sortUtils = new SortUtils();
 
   // Update current page number as it changes
   const pageChange = ({ selected }) => {
@@ -30,10 +32,12 @@ function FlowerCard() {
       const defaultStrains = [...strainData.slice()];
       setWeedInfo(defaultStrains);
     } else {
-      const sorted = strainData.slice().sort((a, b) => {
-        return a.name[0] > b.name[0] ? 1 : a.name[0] < b.name[0] - 1;
+      const sorted = strainData.sort(function (a, b) {
+        if (a.name[0] > b.name[0]) return 1;
+        if (a.name[0] < b.name[0]) return -1;
+        return 0;
       });
-      setWeedInfo((strainData) => [...sorted]);
+      setWeedInfo(sorted);
     }
   }, [setSortProducts]);
 
@@ -63,11 +67,11 @@ function FlowerCard() {
                 {/* type */}
                 <span className={classes.type}>{strain.type} </span>
                 {/* thc level */}
-                <p className={classes.levels}>
+                <div className={classes.levels}>
                   <span className={classes.thc}>{strain.thc} </span>
                   {/* cbd level */}
                   <span className={classes.cdb}>{strain.cbd}</span>
-                </p>
+                </div>
               </p>
             </div>
           </div>

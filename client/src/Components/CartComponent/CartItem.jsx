@@ -58,6 +58,11 @@ function CartItem({
   return (
     <Card id={id} className={classes.card}>
       <Card.Body>
+        <div className={classes["cartBtn_Wrapper"]}>
+          <button className={classes.cartBtn} type="button" onClick={deleteAll}>
+            <i className="fa-solid fa-trash"></i>
+          </button>
+        </div>
         <div className={classes["wrapper-img"]}>
           <img
             src={`${imageSrc ? imageSrc : img}`}
@@ -104,9 +109,6 @@ function CartItem({
             </div>
           </div>
         </div>
-        <button className={classes.cartBtn} type="button" onClick={deleteAll}>
-          <i className="fa-solid fa-trash"></i>
-        </button>
       </Card.Body>
     </Card>
   );
