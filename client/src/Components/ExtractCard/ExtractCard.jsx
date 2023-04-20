@@ -25,7 +25,6 @@ import wax4 from "../../Assets/Extracts/wax4.jpg";
 function ExtractCard() {
   const [defaultProducts, setDefaultProducts] = useState([]);
   const [extractInfo, setExtractInfo] = useState([]);
-  const [sortedProducts, setSortedProducts] = useState([]);
   const [load, setLoad] = useState(true);
   const [pageNumber, setPageNumber] = useState(0);
   const { setSortProducts, sort } = useContext(SortContext);
@@ -43,15 +42,20 @@ function ExtractCard() {
 
   useEffect(() => {
     if (sort) {
-      setExtractInfo(
-        extractInfo.slice().sort((a, b) => {
-          return a.name[0] > b.name[0] ? 1 : a.name[0] < b.name[0] - 1;
-        })
-      );
+      // Shallow copy
+      const copy = extractInfo.slice();
+
+      const sorted = copy.sort(function (a, b) {
+        if (a.name[0] > b.name[0]) return 1;
+        if (a.name[0] < b.name[0]) return -1;
+        return 0;
+      });
+
+      setExtractInfo(sorted);
     } else {
       setExtractInfo(defaultProducts);
     }
-  }, [sort, setSortProducts]);
+  }, [setSortProducts, sort]);
 
   // Pagination
   const postPerPage = 10;

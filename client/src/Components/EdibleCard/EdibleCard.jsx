@@ -41,15 +41,20 @@ function EdibleCard() {
 
   useEffect(() => {
     if (sort) {
-      setEdibleInfo(
-        edibleInfo.slice().sort((a, b) => {
-          return a.name[0] > b.name[0] ? 1 : a.name[0] < b.name[0] - 1;
-        })
-      );
+      // Shallow copy
+      const copy = edibleInfo.slice();
+
+      const sorted = copy.sort(function (a, b) {
+        if (a.name[0] > b.name[0]) return 1;
+        if (a.name[0] < b.name[0]) return -1;
+        return 0;
+      });
+
+      setEdibleInfo(sorted);
     } else {
       setEdibleInfo(defaultProducts);
     }
-  }, [sort, setSortProducts]);
+  }, [setSortProducts, sort]);
 
   const postPerPage = 10;
   const pagesVisited = pageNumber * postPerPage;
